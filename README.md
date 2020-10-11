@@ -16,3 +16,4 @@ São armazenados as informaçoes de disciplinas inseridas e palavras, para visua
 - O código da minha aplicação possui comentários explicando cada operação? Sim
 - A aplicação está funcionando corretamente? Sim
 - A aplicação está completa? Sim
+[![Run on Repl.it](https://repl.it/badge/github/BarbaraFe/palavrasintegradas)](https://repl.it/github/BarbaraFe/palavrasintegradas)
