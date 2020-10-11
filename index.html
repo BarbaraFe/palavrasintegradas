@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <title>Palavras Integradas</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./palavrasintegradas.css" />
+  <script src="./func.js"></script>
+  <script src="./palavrasintegradas.js"></script>
+</head>
+
+<body>
+  <header class="headerBar dark">
+    <div class="appName">Palavras Integradas</div>
+    <div class="badge warning"><span id="estado">0</span></div>
+  </header>
+
+  <div id="tela1" class="component">
+    <div class="componentHeader">
+      <h1 class="componentTitle">Minhas disciplinas</h1>
+      <button id="btnAdic" class="button primary">+
+      </button>
+    </div>
+    <div class="componentContent">
+      <div id="blank">
+        <p>Nenhuma disciplina cadastrada</p>
+      </div>
+      <ul id="listaDedisciplinas" class="list hidden"></ul>
+    </div>
+  </div>
+
+  <div id="tela2" class="component hidden">
+    <div class="componentHeader">
+      <h1 class="componentTitle">
+        Nova disciplina
+      </h1>
+    </div>
+    <div class="componentContent">
+      <div class="field">
+        <label for="inputNovaDisciplina">Disciplina:</label>
+        <input id="inputNovaDisciplina" type="text" autocomplete="off" />
+      </div>
+      <div class="buttonGroup mt1 end">
+        <button id="btnCanc1" class="button quarter light">Cancelar</button>
+        <button id="btnInc" class="button quarter primary" disabled>
+          Incluir
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div id="tela3" class="component hidden">
+    <div class="componentHeader">
+      <h1 class="componentTitle">Alteração de palavras</h1>
+    </div>
+    <div class="componentContent">
+      <div class="field">
+        <label for="inputAlteraDisciplina">Disciplina:</label>
+        <input id="inputAlteraDisciplina" type="text" autocomplete="off" />
+      </div>
+      <div class="buttonGroup end mt1">
+        <button id="btnCanc2" class="button quarter danger" >Cancelar</button>
+        <button id="btnAlt" class="button quarter primary">Alterar</button>
+      </div>
+      <div class="componentContent">
+        <div class="field">
+          <label>Palavra:</label>
+          <input id="inputNovaPalavra" type="text" autocomplete="off" />
+        </div>
+        <div class="buttonGroup end mt1">
+          <button class="button quarter danger" onclick="DeletaPalavra()">Deletar Palavras</button>
+          <button class="button quarter primary" onclick="AdicionarPalavra()">
+            Incluir
+          </button>
+        </div>
+      </div>
+      <div class="buttonGroup end mt3">
+        <button id="btnDel" class="button quarter danger">
+          Apagar disciplina
+        </button>
+      </div>
+      <br><hr/>
+      <label>Lista de palavras:</label>
+      <p id="mostrarpalavras"></p>
+    </div>
+  </div>
+</body>
+</html>
